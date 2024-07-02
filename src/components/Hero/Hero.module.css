@@ -1,0 +1,15 @@
+.heroContainer {
+    display: flex;
+    margin: 5% 10%;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroContainer img{
+    max-width: 550px;
+}
+
+.heroContainer > * {
+    flex: 1
+}
