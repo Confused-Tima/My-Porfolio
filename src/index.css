@@ -1,6 +1,5 @@
 @import "./vars.css";
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,10 +8,23 @@
   color: var(--color-text);
 }
 
+body {
+  user-select: none;
+}
+
 ul li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+div.escapeBlur {
+  position: relative;
+  z-index: 1;
 }

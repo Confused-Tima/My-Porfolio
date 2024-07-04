@@ -7,7 +7,9 @@ export const Navbar = () => {
   console.log(menuOpen && false);
   return (
     <nav>
-      <a className={styles.title}>Portfolio</a>
+      <div className="escapeBlur">
+        <a className={styles.title}>Portfolio</a>
+      </div>
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}
