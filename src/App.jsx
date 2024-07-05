@@ -9,7 +9,7 @@ function App() {
       <div className={styles.marginContainer}>
         <Navbar />
         <Hero />
-        {/* <About /> */}
+        <About />
       </div>
     </div>
   );
