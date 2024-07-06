@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "title": "Python",
+      "imageSrc": "experience/skills/python.png"
+    },
+    {
+      "id": 5,
+      "title": "Docker",
+      "imageSrc": "experience/skills/docker.png"
+    },
+    {
+      "id": 4,
+      "title": "MongoDB",
+      "imageSrc": "experience/skills/mongodb3.png"
+    },
+    {
+      "id": 6,
+      "title": "PostgreDB",
+      "imageSrc": "experience/skills/postgre.png"
+    },
+    {
+      "id": 9,
+      "title": "React",
+      "imageSrc": "experience/skills/react.png"
+    },
+    {
+      "id": 10,
+      "title": "Node",
+      "imageSrc": "experience/skills/node.png"
+    },
+    {
+      "id": 7,
+      "title": "HTML",
+      "imageSrc": "experience/skills/html.png"
+    },
+    {
+      "id": 8,
+      "title": "CSS",
+      "imageSrc": "experience/skills/css.png"
+    }
+  ]

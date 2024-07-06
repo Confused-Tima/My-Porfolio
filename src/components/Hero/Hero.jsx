@@ -12,15 +12,15 @@ export const Hero = () => {
       <div className="escapeBlur">
         <h1 className={styles.title}>Hi, I'm Amit Bisht</h1>
         <p className={styles.description}>
-          I'm a Full Stack developer with 2.5 years of experience using python.
+          I'm a Full Stack developer with more than 2.5 years of experience.
           Reach out if you'd like to learn more.
         </p>
-        <button
+        <a
           className={styles.contactBtn}
           href="mailto:thsibtima1999@gmail.com"
         >
           Contact Me
-        </button>
+        </a>
       </div>
       <div className="escapeBlur">
         <img

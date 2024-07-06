@@ -4,15 +4,15 @@ import { getImageURL } from "../../utils.js";
 
 export const About = () => {
   return (
-    <section className={styles.aboutSection}>
+    <section className={`${styles.aboutSection} escapeBlur`} id="about">
       <div className={styles.container}>
-        <h2 className={styles.title}>ABOUT</h2>
+        <h2 className="title">ABOUT</h2>
         <div className={styles.dataContainer}>
           <div className={styles.imageContainer}>
-            <img src={getImageURL("about/rbp5.png")} alt="A guy working" />
+            <img src={getImageURL("about/nbg1.png")} alt="A guy working" />
           </div>
-          <div className={styles.contentContainer}>
-            <div className={styles.contentDividerContainer}>
+          <ul className={styles.aboutItems}>
+            <li className={styles.aboutItem}>
               <img
                 src={getImageURL("about/serverIcon.png")}
                 alt="Server Icon"
@@ -24,8 +24,8 @@ export const About = () => {
                   systems and APIs.
                 </p>
               </div>
-            </div>
-            <div className={styles.contentDividerContainer}>
+            </li>
+            <li className={styles.aboutItem}>
               <img
                 src={getImageURL("about/uiIcon.png")}
                 alt="AWS Console Icon"
@@ -37,8 +37,8 @@ export const About = () => {
                   scalable and secure applications.
                 </p>
               </div>
-            </div>
-            <div className={styles.contentDividerContainer}>
+            </li>
+            <li className={styles.aboutItem}>
               <img
                 src={getImageURL("about/cursorIcon.png")}
                 alt="Cursor Icon for front end"
@@ -50,8 +50,8 @@ export const About = () => {
                   responsive and optimised sites.
                 </p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
