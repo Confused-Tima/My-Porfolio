@@ -6,7 +6,7 @@ export const Navbar = () => {
   const [menuOpen, menuUpdate] = useState(false);
   console.log(menuOpen && false);
   return (
-    <nav>
+    <nav className="marginContainer">
       <div className="escapeBlur">
         <a className={styles.title}>Portfolio</a>
       </div>

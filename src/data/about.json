@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "title": "Backend Developer",
+      "imageSrc": "about/serverIcon.png",
+      "quote": "I have experience developing fast and optimised back-end systems and APIs."
+    },
+    {
+      "id": 5,
+      "title": "AWS Developer",
+      "imageSrc": "about/uiIcon.png",
+      "quote": "Experience in leveraging multiple AWS services to build scalable and secure applications."
+    },
+    {
+      "id": 2,
+      "title": "Frontend Developer",
+      "imageSrc": "about/cursorIcon.png",
+      "quote": "I'm a front-end developer with experience in building responsive and optimised sites."
+    }
+]

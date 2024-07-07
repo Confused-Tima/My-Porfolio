@@ -8,7 +8,7 @@ export const Hero = () => {
   console.log(`Root Element Font Size: ${rootFontSize}`);
 
   return (
-    <section className={styles.heroContainer}>
+    <section className={`marginContainer ${styles.heroContainer}`}>
       <div className="escapeBlur">
         <h1 className={styles.title}>Hi, I'm Amit Bisht</h1>
         <p className={styles.description}>
@@ -29,8 +29,8 @@ export const Hero = () => {
           alt="Image of myself"
         />
       </div>
-      <div className={styles.topBlur}></div>
-      <div className={styles.bottomBlur}></div>
+      {/* <div className={styles.topBlur}></div>
+      <div className={styles.bottomBlur}></div> */}
     </section>
   );
 };

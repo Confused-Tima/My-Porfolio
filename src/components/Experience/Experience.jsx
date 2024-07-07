@@ -6,25 +6,15 @@ import { getImageURL } from "../../utils";
 
 export const Experience = () => {
   return (
-    <section id="experience">
+    <section id="experience" className="marginContainer">
       <h2 className="title">Experience</h2>
       <div className={styles.container}>
-        <ul className={styles.skillContainer}>
-          {skills.map((skill) => (
-            <li className={styles.skillItem} key={`skill-${skill.id}`}>
-              <div>
-                <img src={getImageURL(skill.imageSrc)} alt={skill.title} />
-              </div>
-              <p>{skill.title}</p>
-            </li>
-          ))}
-        </ul>
         <ul className={styles.expContainer}>
           {allHistory.map((history) => (
             <li className={styles.exp} key={`history-${history.id}`}>
               <img
                 src={getImageURL(history.imageSrc)}
-                alt={`{history.organisation} Logo`}
+                alt={`${history.organisation} Logo`}
               />
               <div>
                 <h3
@@ -34,8 +24,8 @@ export const Experience = () => {
                   className={styles.tenure}
                 >{`${history.startDate} - ${history.endDate}`}</p>
                 <ul className={styles.expList}>
-                  {history.experiences.map((exp) => (
-                    <li>{exp}</li>
+                  {history.experiences.map((exp, i) => (
+                    <li key={`${exp.startDate}-${i}`}>{exp}</li>
                   ))}
                 </ul>
               </div>

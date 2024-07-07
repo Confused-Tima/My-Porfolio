@@ -3,6 +3,11 @@ import { Navbar } from "./components/Navbar/Navbar.jsx";
 import { Hero } from "./components/Hero/Hero.jsx";
 import { About } from "./components/About/About.jsx";
 import { Experience } from "./components/Experience/Experience.jsx";
+import { Scroller } from "./components/Scroller/Scroller.jsx";
+
+const isReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+).matches;
 
 function App() {
   return (
@@ -11,6 +16,7 @@ function App() {
         <Navbar />
         <Hero />
         <About />
+        <Scroller isReducedMotion={isReducedMotion} />
         <Experience />
       </div>
     </div>

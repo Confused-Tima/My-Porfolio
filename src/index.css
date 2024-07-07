@@ -28,6 +28,10 @@ button {
   border: none;
 }
 
+.marginContainer {
+  margin-inline: 10%;
+}
+
 .escapeBlur {
   position: relative;
   z-index: 1;
@@ -43,5 +47,9 @@ button {
 @media screen and (max-width: 830px) {
   .title {
     text-align: center;
+  }
+
+  .marginContainer {
+    margin-inline: 4%;
   }
 }

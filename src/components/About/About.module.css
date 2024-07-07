@@ -2,13 +2,24 @@
 
 .aboutSection {
   margin-top: 8%;
-  background-color: rgba(12, 12, 12, 0.6);
   letter-spacing: 1px;
   border-radius: 15px;
+  /* background: rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3); */
+
+  background: var(--color-secondary);
+  box-shadow: 0 3rem 6rem -1.5rem var(--color-shadow);
+  margin-inline: 5%;
+  /* background: #e8e8e8;
+  box-shadow: 20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff; */
 }
 
 .container {
-  margin: 0 4%;
+  margin: 0 5%;
   padding: 3% 0;
 }
 
@@ -52,13 +63,21 @@
     rgba(165, 215, 232, 0.42) 0%,
     rgba(255, 255, 255, 0) 100%
   );
+  /* background: #B79CED; */
   background-size: 0 100%;
   background-repeat: no-repeat;
   transition: 0.4s;
+  /* border: 5px #0b1b36 solid; */
+  height: clamp(8rem, 33%, 24rem);
 }
 
-.aboutItem:hover {
-  background-size: 100% 100%;
+.blurItem {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+.active {
+  transform: scale(1.1, 1.1);
 }
 
 .aboutItem h3 {

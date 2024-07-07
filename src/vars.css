@@ -2,9 +2,10 @@
     /* Colours */
     --color-text: #fff;
     --color-primary: #576cbc;
-    --color-secondary: #19376d;
+    --color-secondary: hsl(215, 25%, 27%);
     --color-dark: #0b2447;
-    --color-bg: #04152d;
+    --color-bg: hsl(217, 33%, 17%);
+    --color-shadow: hsl(218, 33%, 9%);
   
     /* Fonts */
     --font-roboto: "Roboto";

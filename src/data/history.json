@@ -1,5 +1,17 @@
 [
   {
+    "id": 1,
+    "role": "Software Engineer",
+    "organisation": "ScryAI",
+    "startDate": "Feb, 2022",
+    "endDate": "Present",
+    "experiences": [
+      "Integrated models with APIs.",
+      "Validated document parser data extraction."
+    ],
+    "imageSrc": "experience/history/ScryAi.png"
+  },
+  {
     "id": 2,
     "role": "Software Engineer",
     "organisation": "GoMechanic",
