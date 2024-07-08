@@ -10,7 +10,7 @@
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3); */
 
-  background: var(--color-secondary);
+  background: hsl(215, 26%, 24%);
   box-shadow: 0 3rem 6rem -1.5rem var(--color-shadow);
   margin-inline: 5%;
   /* background: #e8e8e8;
@@ -58,17 +58,21 @@
   gap: 10px;
   border-radius: 20px;
   font-size: 1.2rem;
-  background-image: linear-gradient(
+  
+  /* background-image: linear-gradient(
     90deg,
     rgba(165, 215, 232, 0.42) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  /* background: #B79CED; */
-  background-size: 0 100%;
-  background-repeat: no-repeat;
   transition: 0.4s;
-  /* border: 5px #0b1b36 solid; */
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+   */
+   /* border: 5px #0b1b36 solid; */
+
+  background: #3b4b61;
   height: clamp(8rem, 33%, 24rem);
+  box-shadow: 0 0.5rem 1rem -0.25rem #2a3340;
 }
 
 .blurItem {

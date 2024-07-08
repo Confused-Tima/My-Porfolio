@@ -6,28 +6,6 @@ import about from "../../data/about.json";
 const initialActiveState = new Array(about.length).fill(false);
 
 export const About = () => {
-  const [isActive, isActiveChange] = useState(initialActiveState);
-  const [isBlur, isBlurChange] = useState(initialActiveState);
-
-  const applyAnimation = (index) => {
-    isActiveChange((prev) => {
-      return prev.map((_, i) => {
-        return i == index ? true : false;
-      });
-    });
-
-    isBlurChange((prev) => {
-      return prev.map((_, i) => {
-        return i != index ? true : false;
-      });
-    });
-  };
-
-  function removeAnimations() {
-    isActiveChange(initialActiveState);
-    isBlurChange(initialActiveState);
-  }
-
   return (
     <section className={`${styles.aboutSection} escapeBlur`} id="about">
       <div className={styles.container}>
@@ -38,18 +16,7 @@ export const About = () => {
           </div>
           <ul className={styles.aboutItems}>
             {about.map((ele, index) => (
-              <li
-                key={`about-${ele.id}`}
-                className={`${styles.aboutItem} 
-                ${isActive[index] && styles.active}
-                ${isBlur[index] && styles.blurItem}
-                `}
-                onMouseEnter={() => applyAnimation(index)}
-                onMouseLeave={removeAnimations}
-                onTouchStart={() => applyAnimation(index)}
-                onTouchEnd={removeAnimations}
-                // onMouseEnter={() => applyAnimation(index)}
-              >
+              <li key={`about-${ele.id}`} className={`${styles.aboutItem}`}>
                 <img
                   src={getImageURL(ele.imageSrc)}
                   alt={`${ele.title} Icon`}
