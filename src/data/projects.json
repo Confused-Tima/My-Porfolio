@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Ecommerce Website",
+    "imageSrc": "projects/ecom.png",
+    "description": "An eCommerce website built with a responsive design and scalable backend, it ensures quick load times and efficient data handling, providing a secure and engaging platform for users",
+    "sourceURL": "https://github.com/AmitBisht-ctrl/FFBakery",
+    "demoURL": "http://amitbisht.pythonanywhere.com/",
+    "techStack": ["python", "django"],
+    "disableDemo": false
+  },
+  {
+    "id": 2,
+    "title": "My Portfolio",
+    "imageSrc": "projects/portfolio.png",
+    "description": "A portfolio website showcasing my skills and versatility with various frameworks and languages. It highlights my experience as a software engineer and the skills I have gained.",
+    "sourceURL": "https://github.com/AmitBisht-ctrl/FFBakery",
+    "demoURL": "/",
+    "disableDemo": true,
+    "techStack": ["react"]
+  }
+]
