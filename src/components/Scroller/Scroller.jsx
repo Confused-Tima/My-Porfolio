@@ -1,4 +1,4 @@
-import react, { useRef, useEffect } from "react";
+import React from "react";
 import styles from "./Scroller.module.css";
 import skills from "../../data/skills.json";
 import { getImageURL } from "../../utils";

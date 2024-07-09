@@ -1,110 +1,79 @@
 @import "../../vars.css";
 
-section {
-    margin-top: 8%;
+:root {
+  --card-height: 350px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-content: space-around;
-    margin-top: 2rem;
-    justify-content: space-evenly;
-    gap: 20px;
+.swiperContainer {
+  margin-top: clamp(50px, 5%, 150px);
+  mask: linear-gradient(
+    to right,
+    transparent,
+    white 5%,
+    white 95%,
+    transparent
+  );
 }
 
-.container > * {
-    flex: 1;
+div.swiperCard {
+  max-width: clamp(250px, 25%, 500px);
+  height: var(--card-height);
+  background: var(--color-secondary);
+  margin-bottom: 50px;
+  border-radius: 15px;
+
+  background: #171717;
+  clip-path: polygon(
+    30px 0%,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%,
+    0% 30px
+  );
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+  /* width: 17em;
+  height: 22.5em;
+  transition: 1s ease-in-out; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  text-align: center;
+  /* padding-inline: 25px; */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center; */
 }
 
-.skillContainer {
-    display: flex;
-    gap: 3.2rem;
-    flex-wrap: wrap;
-    /* align-content: space-around; */
+.historyContent h3 {
+  font-weight: bold;
+  margin-top: 25px;
 }
 
-.skillItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    justify-content: center;
+.historyContent img {
+  margin-top: 50px;
+  width: 70px;
+  padding: 10px;
+  background: white;
+  border-radius: 15px;
 }
 
-.skillItem div {
-    padding: 20px;
-    background-color: var(--color-secondary);
-    border-radius: 50%;
+.historyContent {
+  width: 100%;
+  height: var(--card-height);
+  /* display: flex;
+  flex-direction: column; */
 }
 
-.skillItem img {
-    width: 75px;
-    height: 75px;
+.experiences {
+  margin-top: 20px;
 }
 
-.skillItem p {
-    font-weight: 500;
-    font-size: 1.2rem;
-    font-family: var(--font-roboto);
-}
-
-.expContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.exp {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    background: #19376d;
-    background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 90%);
-    border-radius: 10px;
-    padding: 24px 1rem;
-    height: clamp(8rem, 30%, 24rem);
-    /* padding: 24px; */
-}
-
-.tenure {
-    font-weight: 100;
-}
-
-.expList {
-    margin-top: 5px;
-    padding-left: 1.2rem;
-}
-
-.expList li {
-    list-style: disc;
-    padding-top: 5px;
-    list-style-position: inside;
-}
-
-@media screen and (max-width: 830px) {
-    .container {
-        flex-direction: column;
-        gap: 60px;
-        padding: 0 10px;
-    }
-
-    .skillContainer {
-        justify-content: center;
-    }
-
-    .skillItem img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .skillItem p {
-        font-size: 1rem;
-    }
-
-    .expContainer {
-        gap: 32px;
-    }
-    
+.experiences li {
+  margin-top: 5px;
 }

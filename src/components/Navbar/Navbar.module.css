@@ -1,10 +1,12 @@
 @import "../../vars.css";
 
 nav{
+  height: 15vh;
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding-top: 3rem;
+  align-items: center;
+  /* padding-top: 3rem; */
 }
 
 .menuBtn {

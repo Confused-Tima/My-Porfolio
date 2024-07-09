@@ -16,6 +16,10 @@ body {
   user-select: none;
 }
 
+section {
+  margin-top: clamp(80px, 8%, 150px);
+}
+
 ul li {
   list-style: none;
 }

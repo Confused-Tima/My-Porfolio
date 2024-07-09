@@ -2,7 +2,6 @@
 
 .heroContainer {
   display: flex;
-  margin-top: 5%;
   gap: 3rem;
   align-items: center;
   justify-content: center;

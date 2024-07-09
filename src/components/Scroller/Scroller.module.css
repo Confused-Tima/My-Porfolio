@@ -4,7 +4,7 @@
   --scroll-image-width: clamp(30px, 5vmin, 40px);
 }
 
-.scrollContainer{
+.scrollContainer {
   display: grid;
   place-content: center;
 }

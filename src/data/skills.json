@@ -5,6 +5,16 @@
       "imageSrc": "experience/skills/python.png"
     },
     {
+      "id": 1,
+      "title": "Django",
+      "imageSrc": "experience/skills/dj.png"
+    },
+    {
+      "id": 1,
+      "title": "FastAPI",
+      "imageSrc": "experience/skills/fastAPI2.png"
+    },
+    {
       "id": 5,
       "title": "Docker",
       "imageSrc": "experience/skills/docker.png"

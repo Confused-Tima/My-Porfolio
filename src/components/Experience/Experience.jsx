@@ -1,38 +1,61 @@
-import react from "react";
+import React from "react";
 import styles from "./Experience.module.css";
 import skills from "../../data/skills.json";
 import allHistory from "../../data/history.json";
 import { getImageURL } from "../../utils";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 export const Experience = () => {
   return (
     <section id="experience" className="marginContainer">
       <h2 className="title">Experience</h2>
-      <div className={styles.container}>
-        <ul className={styles.expContainer}>
-          {allHistory.map((history) => (
-            <li className={styles.exp} key={`history-${history.id}`}>
+      <Swiper
+        effect={"coverflow"}
+        loop={true}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        pagination={{ el: ".swiper-pagination", clickable: true }}
+        navigation={{
+          nextEl: ".swiper-nav-button-next",
+          prevEl: ".swiper-nav-button-prev",
+          clickable: true,
+        }}
+        className={styles.swiperContainer}
+      >
+        {allHistory.map((ele) => (
+          <SwiperSlide className={styles.swiperCard}>
+            <div className={styles.historyContent}>
               <img
-                src={getImageURL(history.imageSrc)}
-                alt={`${history.organisation} Logo`}
+                src={getImageURL(ele.imageSrc)}
+                alt={`${ele.organisation} Icon`}
               />
-              <div>
-                <h3
-                  className={styles.companyRole}
-                >{`${history.role}, ${history.organisation}`}</h3>
-                <p
-                  className={styles.tenure}
-                >{`${history.startDate} - ${history.endDate}`}</p>
-                <ul className={styles.expList}>
-                  {history.experiences.map((exp, i) => (
-                    <li key={`${exp.startDate}-${i}`}>{exp}</li>
-                  ))}
-                </ul>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+              <h3>{`${ele.role}, ${ele.organisation}`}</h3>
+              <p>{`${ele.startDate} - ${ele.endDate}`}</p>
+              <ul className={styles.experiences}>
+                {ele.experiences.map((exp) => (
+                  <li>{exp}</li>
+                ))}
+              </ul>
+            </div>
+          </SwiperSlide>
+        ))}
+        <div className={`${styles.swiperPagination} swiper-pagination `}></div>
+      </Swiper>
     </section>
   );
 };

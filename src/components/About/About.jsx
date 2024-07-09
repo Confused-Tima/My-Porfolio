@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import React from "react";
 import styles from "./About.module.css";
 import { getImageURL } from "../../utils.js";
 import about from "../../data/about.json";

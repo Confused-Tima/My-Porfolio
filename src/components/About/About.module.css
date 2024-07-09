@@ -1,7 +1,6 @@
 @import "../../vars.css";
 
 .aboutSection {
-  margin-top: 8%;
   letter-spacing: 1px;
   border-radius: 15px;
   /* background: rgba(0, 0, 0, 0.3); 
@@ -101,9 +100,9 @@
     display: none;
   }
 
-  .aboutSection {
+  /* .aboutSection {
     margin-top: 16%;
-  }
+  } */
 
   .aboutItems {
     margin-top: 1rem;
