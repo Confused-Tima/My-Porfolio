@@ -1,0 +1,47 @@
+@import "../../vars.css";
+
+.contactContainer {
+    display: flex;
+    background-color: var(--color-secondary-mid);
+    padding-inline: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-block: 5%;
+}
+
+.heading h2 {
+    font-size: 3.6rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.heading p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contactContainer li a {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.contactContainer li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.contactContainer li img {
+    width: 80%;
+}
+
+@media screen and (max-width: 830px) {
+    .contactContainer {
+        padding-inline: 4%;
+        flex-direction: column;
+        align-items: initial;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+}

@@ -5,6 +5,7 @@ import { About } from "./components/About/About.jsx";
 import { Scroller } from "./components/Scroller/Scroller.jsx";
 import { Experience } from "./components/Experience/Experience.jsx";
 import { Projects } from "./components/Porjects/Projects.jsx";
+import {Contact} from "./components/Contact/Contact.jsx";
 
 const isReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)"
@@ -20,6 +21,7 @@ function App() {
         <Scroller isReducedMotion={isReducedMotion} />
         <Projects />
         <Experience />
+        <Contact />
       </div>
     </div>
   );

@@ -4,6 +4,8 @@ import skills from "../../data/skills.json";
 import allHistory from "../../data/history.json";
 import { getImageURL } from "../../utils";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
@@ -40,7 +42,7 @@ export const Experience = () => {
         {allHistory.map((ele) => (
           <SwiperSlide className={styles.swiperCard}>
             <div className={styles.historyContent}>
-              <img
+              <LazyLoadImage
                 src={getImageURL(ele.imageSrc)}
                 alt={`${ele.organisation} Icon`}
               />

@@ -1,6 +1,7 @@
 import react from "react";
 import styles from "./Hero.module.css";
 import { getImageURL } from "../../utils.js";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Hero = () => {
   const rootElement = document.documentElement;
@@ -15,19 +16,18 @@ export const Hero = () => {
           I'm a Full Stack developer with more than 2.5 years of experience.
           Reach out if you'd like to learn more.
         </p>
-        <a
-          className={styles.contactBtn}
-          href="mailto:thsibtima1999@gmail.com"
-        >
+        <a className={styles.contactBtn} href="mailto:thsibtima1999@gmail.com">
           Contact Me
         </a>
       </div>
       <div className="escapeBlur">
-        <img
+        <img 
           className={styles.image}
           src={getImageURL("hero/officeChill.png")}
           alt="Image of myself"
         />
+        {/* <LazyLoadImage
+        /> */}
       </div>
       {/* <div className={styles.topBlur}></div>
       <div className={styles.bottomBlur}></div> */}

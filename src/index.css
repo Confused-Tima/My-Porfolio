@@ -16,7 +16,7 @@ body {
   user-select: none;
 }
 
-section {
+section, footer {
   margin-top: clamp(80px, 8%, 150px);
 }
 
