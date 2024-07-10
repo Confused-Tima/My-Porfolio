@@ -1,6 +1,5 @@
 @import "./vars.css";
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,10 +8,52 @@
   color: var(--color-text);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  user-select: none;
+}
+
+section, footer {
+  margin-top: clamp(80px, 8%, 150px);
+}
+
 ul li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+.marginContainer {
+  margin-inline: 10%;
+}
+
+.escapeBlur {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 830px) {
+  .title {
+    text-align: center;
+  }
+
+  .marginContainer {
+    margin-inline: 4%;
+  }
 }

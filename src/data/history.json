@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "role": "Software Engineer",
+    "organisation": "ScryAI",
+    "startDate": "Feb, 2023",
+    "endDate": "Present",
+    "experiences": [
+      "Integrated models with APIs.",
+      "Validated document parser data extraction."
+    ],
+    "imageSrc": "experience/history/ScryAi.png"
+  },
+  {
+    "id": 2,
+    "role": "Software Engineer",
+    "organisation": "GoMechanic",
+    "startDate": "Jan, 2022",
+    "endDate": "Feb, 2023",
+    "experiences": [
+      "Integrated the accessories microservice",
+      "Handled Miles Membership data manipulation"
+    ],
+    "imageSrc": "experience/history/Gomechanic.png"
+  },
+  {
+    "id": 3,
+    "role": "Software Engineer Intern",
+    "organisation": "GoMechanic",
+    "startDate": "Oct, 2021",
+    "endDate": "Jan, 2022",
+    "experiences": [
+      "Addressed bugs",
+      "Improved response time"
+    ],
+    "imageSrc": "experience/history/Gomechanic.png"
+  }
+]

@@ -1,61 +1,61 @@
 @import "../../vars.css";
 
-nav {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 10%;
-    padding-top: 61px;
+nav{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
 }
 
 .menuBtn {
-    display: none;
+  display: none;
 }
 
 .title {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 .menuItems {
-    display: flex;
-    gap: 3rem;
-    font-size: 1.6rem;
+  display: flex;
+  gap: 3rem;
+  font-size: 1.6rem;
+  z-index: 2;
 }
 
-
 @media screen and (max-width: 830px) {
-    .menu {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 1.2rem;
-        right: 0;
-    }
+  .menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.2rem;
+    right: 0;
+  }
 
-    .menuBtn {
-        display: block;
-        cursor: pointer;
-    }
-    
-    .menuItems {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.8rem;
-        background: rgb(25, 55, 109);
-        background: linear-gradient(
-            0deg,
-            rgba(25, 55, 109, 0.2) 0%,
-            rgba(25, 55, 109, 1) 100%
-        );
-        padding: 24px 33px;
-        border-radius: 10px;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-    }
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
 
-    .menuOpen {
-        display: flex;
-    }
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    padding: 24px 33px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .menuOpen {
+    display: flex;
+  }
 }

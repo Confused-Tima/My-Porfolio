@@ -1,14 +1,18 @@
-import react, { useState } from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { getImageURL } from "../../utils.js";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Navbar = () => {
   const [menuOpen, menuUpdate] = useState(false);
   console.log(menuOpen && false);
   return (
-    <nav>
-      <a className={styles.title}>Portfolio</a>
+    <nav className="marginContainer">
+      <div className="escapeBlur">
+        <a className={styles.title}>Portfolio</a>
+      </div>
       <div className={styles.menu}>
+        {/* <LazyLoadImage /> */}
         <img
           className={styles.menuBtn}
           src={

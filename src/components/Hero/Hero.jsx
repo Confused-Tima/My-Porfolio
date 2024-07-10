@@ -1,17 +1,36 @@
 import react from "react";
 import styles from "./Hero.module.css";
 import { getImageURL } from "../../utils.js";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const Hero = () => {
-    return (
-        <section className={styles.heroContainer}>
-            <div>
-                <h1>Hi, I'm Amit Bisht</h1>
-                <p>I'm a Full Stack developer with 2.5 years of experience using python. Reach out if you'd like to learn more.</p>
-                <a href="mailto:thsibtima1999@gmail.com">Contact Me</a>
-            </div>
-            <img src={getImageURL("hero/lookAtTime.png")} alt="Image of myself" />
-        </section>
-    );
-}
+  const rootElement = document.documentElement;
+  const rootFontSize = window.getComputedStyle(rootElement).fontSize;
+  console.log(`Root Element Font Size: ${rootFontSize}`);
+
+  return (
+    <section className={`marginContainer ${styles.heroContainer}`}>
+      <div className="escapeBlur">
+        <h1 className={styles.title}>Hi, I'm Amit Bisht</h1>
+        <p className={styles.description}>
+          I'm a Full Stack developer with more than 2.5 years of experience.
+          Reach out if you'd like to learn more.
+        </p>
+        <a className={styles.contactBtn} href="mailto:thsibtima1999@gmail.com">
+          Contact Me
+        </a>
+      </div>
+      <div className="escapeBlur">
+        <img 
+          className={styles.image}
+          src={getImageURL("hero/officeChill.png")}
+          alt="Image of myself"
+        />
+        {/* <LazyLoadImage
+        /> */}
+      </div>
+      {/* <div className={styles.topBlur}></div>
+      <div className={styles.bottomBlur}></div> */}
+    </section>
+  );
+};

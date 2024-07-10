@@ -1,0 +1,83 @@
+@import "../../vars.css";
+
+:root {
+  --scroll-image-width: clamp(30px, 5vmin, 40px);
+}
+
+.scrollContainer {
+  display: grid;
+  place-content: center;
+}
+
+.scrollerSection {
+  margin-top: 2%;
+  display: flex;
+  max-width: 100%;
+  flex: 1;
+  flex-shrink: 2;
+}
+
+.infiniteScroll {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-block: 1rem;
+  gap: 1rem;
+}
+
+.infiniteScroll li {
+  width: calc(5 * var(--scroll-image-width));
+  padding-block: 1.2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background: var(--color-secondary);
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--color-shadow);
+}
+
+.infiniteScroll li img {
+  height: var(--scroll-image-width);
+}
+
+.scrollerSection[data-animated="true"] {
+  overflow-x: hidden;
+  mask: linear-gradient(
+    to right,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+}
+
+.scrollerSection[data-animated="true"] .infiniteScroll {
+  width: fit-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 20s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.infiniteScroll[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.infiniteScroll[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.infiniteScroll[data-speed="fast"] {
+  --_animation-duration: 15s;
+}
+
+.infiniteScroll[data-speed="slow"] {
+  --_animation-duration: 25s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+li.test {
+  background: red;
+}
